@@ -36,7 +36,7 @@ echo "===export method: ${export_method}==="
 echo "===commit msg: $1==="
 
 #先清空前一次build
-gym --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}
+fastlane gym --workspace ${workspace_path} --scheme ${scheme} --clean --configuration ${configuration} --archive_path ${archive_path} --export_method ${export_method} --output_directory ${output_path} --output_name ${ipa_name}
 
 #上传到fir
 fir publish ${ipa_path} -T fir_token -c "${commit_msg}"
