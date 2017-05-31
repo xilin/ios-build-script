@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#设置超时
+export FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT=120
+
 #计时
 SECONDS=0
 
