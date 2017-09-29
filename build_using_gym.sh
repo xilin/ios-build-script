@@ -7,7 +7,7 @@ export FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT=120
 SECONDS=0
 
 #假设脚本放置在与项目相同的路径下
-project_path=$(pwd)
+project_path="$(dirname "$(pwd)")"
 #取当前时间字符串添加到文件结尾
 now=$(date +"%Y_%m_%d_%H_%M_%S")
 
